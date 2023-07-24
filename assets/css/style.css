@@ -1,3 +1,4 @@
+/*universal selector */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -14,47 +15,47 @@ body {
     background-color: #2a607c;
     color: #ffffff;
 }
-
-.header h1 {
+/* removed header and left as element selector for h1 as there is only 1 instance of it */
+h1 {
     display: inline-block;
     font-size: 48px;
 }
-
-.header h1 .seo {
+/* changed Class to id Seo, used to changed the color of soa in the header */
+#seo 
+{
     color: #d9dcd6;
 }
-
-.header div {
+/* renamed to navigationbar */
+.navigationbar {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
-
-.header div ul {
+/* renamed to nav for nav-bar*/
+.nav {
     list-style-type: none;
 }
-
-.header div ul li {
+/* renamed to nav-bar-options*/
+.nav-bar-options {
     display: inline-block;
     margin-left: 25px;
 }
-
+/* id's created for each use of a */
 a {
     color: #ffffff;
     text-decoration: none;
 }
-
+/* id's created for each use of p */
 p {
     font-size: 16px;
 }
-
-.hero {
+/* changed "hero" to an id instead of class and renamed to background-image, removed url and added to index.html file*/
+#background-image {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -74,7 +75,7 @@ p {
     display: inline-block;
     margin-left: 20px;
 }
-
+/* added color to benefits, this affects benefits-sub */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -84,57 +85,26 @@ p {
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
-}
-
-.benefit-lead {
-    margin-bottom: 32px;
     color: #ffffff;
 }
-
-.benefit-brand {
+/* created class benefits-sub to replace -lead, -brand, and -cost, affects the sub catagories within benefits */
+.benefits-sub {
     margin-bottom: 32px;
-    color: #ffffff;
 }
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+/* created class benefits-heading to replace -lead, -brand, and -cost, affects the headings within benefits section*/
+.benefits-heading {
     margin-bottom: 10px;
     text-align: center;
 }
-
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+/* created class benefits-img to replace -lead, -brand, and -cost, affects the images within benefits section */
+.benefits-img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
+/* created class content-subcatagories to replace search-engine optimization, online-reputation-managment, and
+social-media-marketing, */ 
+.content-subcatagories {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -142,48 +112,14 @@ p {
     background-color: #0072bb;
     color: #ffffff;
 }
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
+/* created class subcatagory-img to replace search-engine optimization img, online-reputation-managment img, and
+social-media-marketing img, affectes the images within subcatagory */ 
+.subcatagory-img {
     max-height: 200px;
 }
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
+/* created class content-h2 to replace search-engine-optimization h2, online-reputation-managment h2, and
+social-media-marketing h2, affectes the headings within subcatagory */ 
+.content-h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
